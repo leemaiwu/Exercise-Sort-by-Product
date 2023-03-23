@@ -1,0 +1,16 @@
+function sortByProduct (array) {
+    let totals = []
+    array.forEach((e, i) => {
+        let totalNum = {
+            total: e*(i + 1),
+            i: i
+        }
+        totals.push(totalNum)
+    })
+    totals.sort((x, y) => x.total - y.total)
+    let newArr = []
+    totals.forEach(e => newArr.push(array[e.i]))
+    return newArr
+}
+console.log(sortByProduct([23, 2, 3, 4, 5]))
+
