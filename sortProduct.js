@@ -28,15 +28,16 @@ function multSort(arr) {
     // sort the array by the multiplied value in the sub array
     // which is the second value
     // sort it ascending
-    arrOfarrs.sort((a, b) => {
-        if (a[1] > [b[1]]) {
-            return 1
-        } else if (a[1] < b[1]){
-            return -1
-        } else {
-            return 0
-        }
-    })
+    arrOfarrs.sort((a, b) => a[1] - b[1]
+        // {
+        // if (a[1] > [b[1]]) {
+        //     return 1
+        // } else if (a[1] < b[1]){
+        //     return -1
+        // } else {
+        //     return 0
+        // }}
+    )
     // console.log(arrOfarrs)
     // conver the sub arrays back into the numbers
     // which will be teh first number of the sub array
