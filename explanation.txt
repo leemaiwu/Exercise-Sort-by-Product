@@ -14,3 +14,24 @@ function sortByProduct (array) {
 }
 console.log(sortByProduct([23, 2, 3, 4, 5]))
 
+---------------------------------
+
+The function "sortByProduct" which takes an array of numbers as its argument. When called with an array, it will return a new array that is sorted based on the product of each element with its position in the original array.
+
+Here's a detailed explanation of how the code works:
+
+The function starts by creating an empty array called "totals" using the "let" keyword.
+
+It then loops through each element of the input array using the forEach() method. For each element "e" and its corresponding index "i", the function calculates the total number as a JavaScript object with two properties: "total", which is the product of "e" and "i+1", and "i", which is the index of "e". This object is then pushed into the "totals" array.
+
+After all the elements of the input array have been processed, the "totals" array contains objects with the total values and their corresponding indices.
+
+The function then sorts the "totals" array based on the "total" property of each object, using the sort() method.
+
+Next, a new empty array called "newArr" is created using the "let" keyword.
+
+The function then loops through the sorted "totals" array using the forEach() method. For each element of "totals", it retrieves the original value from the input array using the "i" property of the object, and pushes that value into the "newArr" array.
+
+Finally, the sorted array "newArr" is returned by the function.
+
+The last line of the code logs the sorted array to the console using the console.log() method, with an example input array of [23, 2, 3, 4, 5].
